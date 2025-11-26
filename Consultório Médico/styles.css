@@ -37,7 +37,7 @@ body {
     gap: 12px;
     position: fixed;
     background-color: #ffffff;
-    z-index: 10px;
+    z-index: 99;
     width: 100%;
     top: 0;
     right: 0;
@@ -111,8 +111,12 @@ body {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 15px 0;
+}
+
+h4 {
+    font-size: 1.7rem;
 }
 
 .grid-caixa {
@@ -154,14 +158,25 @@ h2 {
 
 .caixa-equipe {
     display: flex;
-    gap: 40px;
-    padding: 20px;
+    gap: 20px;
     overflow-x: auto;
 }
-
 .conf-equipe {
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3fr)
+}
+.conf-equipe div {
+    margin-left: 85px;
+}
+.conf-equipe h4{
     text-align: center;
-    min-width: 160px;
+}
+
+.conf-equipe p {
+    width: 300px;
+    text-align: center;
 }
 
 .eque-img {
@@ -192,6 +207,10 @@ h2 {
     gap: 24px;
     padding: 20px 0;
 
+}
+
+.estrela {
+    font-size: 2rem;
 }
 
 .conf-depoimento {
@@ -227,13 +246,13 @@ h2 {
     background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSQv-1it3mktA0-YhqtxZPJB7cwos9Gse_U8fHoQ_VxMt2rWS9N-8rZG6qSwvJR7qfRdI7Q5PoAuNYeIj2ea4d8CifeA-xVLh0lA21tHxUbx7ShXMA3aLV-bimnG1pitKyMQlgn0eWt14y-d9ikzGbJgjUmmLfdduxx4RLgpGADtTSuN_DPckgBJGAliRzAM957D8L4rvtQzG12Yxe7suIoyQZ3KF7eastKY8SHgRFxoNFmrcBu7WVeRYsX6-FAVUIMX6UP2BOWws;");
 }
 
-.container h3 {
+.titli-cli {
     text-align: center;
     font-size: 4rem;
 }
 
 .container p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
 }
 
@@ -260,7 +279,41 @@ h2 {
     text-align: center;
     font-size: 1.7rem;
 }
+.paragrafo-especi {
+    width: 100%;
+    text-align: center;
+}
 
 .article p {
     text-align: center;
+}
+
+.sobre-nos h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+.sobre-historia h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+.imagem-lado {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+}
+
+.sobre-imagem {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwjMhUW0HnO4TOIur8j6lVJuCUYs6oFQdLUMXzByD7BYulDHlJJqcmMx-J2RH8TTfdMLzUEf4QgkE22JC7kLeJ5FDOHkHEV3eReOUS0_P4KzkrChzS1TuQo2kv06iizOm7d5T74C4UH9mARz0xlIgph2RBVpg3I0Q9T1jOraQK5gramKcrNEbMWhQuNxplBSzpDYLxP9Z3gcg8iO5pzUf40x1ZzRHkyPIe8sgI7dc5UkwnUh3XcfJx5chZ9I7TOM0z5MkepX3heQo");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 90vh;
+}
+
+.sobre-imagem2 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtPsrYThVePy_9IvawTmj54aCV9hV5kHvuZxdKjTQJm7p4Xswx0dZMvlXXosgSRdQ-KaLYmeOamB3ptdfvufQxDUWzRycZH06zt07qljffHnseiKImrCjO0ogkjBnOeOP47dxQoBVD0YRQXB7D1SVzzeqSFBOfZJRHOJQ1HM--WB_H7KFcZcMLOxXPcAzFUagcAt2i1N7pNBZ4AAufwcUWcwy6lZZffHlA0z52MGdU6iSuUYtSxksOHnLaa8ZVrKIjFYCAeEA4x5g");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 90vh;
 }
