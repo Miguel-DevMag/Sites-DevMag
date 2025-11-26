@@ -45,7 +45,13 @@ body {
 }
 
 .navegacao a {
-     margin: 10px;
+     margin: 20px;
+     text-decoration: none;
+     color: #696969;
+}
+.navegacao a:hover {
+    color: var(--Coolor-estrela);
+    text-decoration: underline;
 }
 
 .nav-container button {
@@ -219,4 +225,42 @@ h2 {
 
 .img-depo3 {
     background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSQv-1it3mktA0-YhqtxZPJB7cwos9Gse_U8fHoQ_VxMt2rWS9N-8rZG6qSwvJR7qfRdI7Q5PoAuNYeIj2ea4d8CifeA-xVLh0lA21tHxUbx7ShXMA3aLV-bimnG1pitKyMQlgn0eWt14y-d9ikzGbJgjUmmLfdduxx4RLgpGADtTSuN_DPckgBJGAliRzAM957D8L4rvtQzG12Yxe7suIoyQZ3KF7eastKY8SHgRFxoNFmrcBu7WVeRYsX6-FAVUIMX6UP2BOWws;");
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.carts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem,1fr));
+    gap: 10px; 
+}
+
+.article {
+    border: var(--border) ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.article i {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article h4{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.article p {
+    text-align: center;
 }
