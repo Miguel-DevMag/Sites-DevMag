@@ -61,6 +61,7 @@ body {
     padding: 10px;
     border-radius: 15px;
     color: white;
+    cursor: pointer;
 }
 
 .nav-container button:hover {
@@ -104,6 +105,7 @@ body {
     background-color: var(--Coolor-estrela);
     width: 20%;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .main-container button:hover {
@@ -124,6 +126,7 @@ h4 {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     padding: 20px;
     gap: 20px;
+    cursor: pointer;
 }
 
 .card {
@@ -214,6 +217,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem,1fr));
     gap: 10px; 
+    cursor: pointer;
 }
 
 .article {
@@ -365,17 +369,111 @@ h4 {
 
 .input-cont input{
     display: flex;
-   background-color: #ececec;
+   
    padding: 1rem 1rem;
    margin-bottom: 10px;
    width: 80%;
    gap: 10px;
    outline: none;
-   border: none;
+  border: 1px solid #333;
    border-radius: 10px;
 }
 
 .input-descri {
     flex-direction: column;
     display: flex;
+    width: 80%;
+}
+
+.for-button {
+    width: 20%;
+    padding: 0.7rem 3rem;
+    border: none;
+    outline: none;
+    background-color: var(--Coolor-estrela);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.for-button:hover {
+    background-color: var(--Color-hover);
+}
+
+.informs {
+    text-align: center;
+}
+
+.mapa {
+    margin: 0 auto;
+    border-radius: 5px ;
+}
+
+.detalhes-input {
+    display: flex;
+    flex-direction: column;
+}
+.detalhes-input input {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #333;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+.notas {
+     width: 100%;
+    max-width: 600px;
+}
+
+.salvar {
+    width: 20%;
+    padding: 0.7rem 3rem;
+    border: none;
+    outline: none;
+    background-color: var(--Coolor-estrela);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.salvar:hover {
+    background-color: var(--Color-hover);
+}
+
+.img-perfil {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBo3QOnMhh2p-dJQQrlTqGCtIlyljguIkIqBAKkoLgqpq1yDaW7ukFdvLIjUUC9DuXBqAlBTjFn13L8x3HX1ltvR-EnZeLHazPJkifPcswV09aNyMGYY8cUcudXqhZGY3ZThyIj3_BXBPSQGFme8f1MKXQjhhUztPcF-JV2huKg5xEQH-xqdK2FEPM-U-nxy66KcaTAAhv5JJi4Quk1vhQ0bE2etKrfP7A8A1izjFGg2--P8sXJagu1ftP8cOArwB9WMwZAVpLL_s");
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.cont-direita {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 10%;
+}
+
+.deta-pag {
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 40px;
+}
+.consulta i {
+    border: 1px solid #3333;
+    padding: 1rem;
+    background-color: #eef0ea;
+    border-radius: 10px;
+}
+.cont-paciente {
+   
 }
