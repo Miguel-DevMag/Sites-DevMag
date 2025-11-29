@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Clínica Vitalis</title>
 </head>
 
@@ -30,7 +30,9 @@
                     <a href="#sobre">Sobre Nos</a>
                     <a href="#depoimento">Depoimento</a>
                     <a href="#contato">Contado</a>
-                    <button>Agendar Consulta</button>
+                    <a href="#detalhe">
+                        <button>Agendar Consulta</button>
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -38,7 +40,9 @@
 
             <h1 class="titulo">Bem-vindo à Clínica DevMag</h1>
             <p class="paragrafo-main">Cuidando da sua saúde com exelência e dedicação</p>
-            <button>Agendar Consulta</button>
+           <a href="#detalhe">
+               <button>Agendar Consulta</button>
+           </a>
         </main>
 
         <h2>Nossas Especialidades</h2>
@@ -221,38 +225,6 @@
                         </div>
                     </div>
     </section>
-    <section class="container" id="contato">
-        <div class="contato-text">
-            <h2>Entre em Contato</h2>
-            <p>Estamos aqui para ajudar. Se você tiver alguma dúvida ou precisar de assistência, entre em contato
-                conosco através do formulário abaixo ou das informações de contato fornecidas.</p>
-        </div>
-        <div class="input-grid">
-            <div class="input-cont">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" placeholder="Seu nome/completo">
-            </div>
-            <div class="input-cont">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" placeholder="Seu e-mail completo">
-            </div>
-            <div class="input-cont">
-                <label for="telefone">Telefone</label>
-                <input type="tel" name="telefone" placeholder=" Seu telefone completo">
-            </div>
-            <div class="input-descri">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="msg" name="msg" rows="3" cols="40"></textarea>
-            </div>
-        </div>
-        <button class="for-button" type="submit">Enviar Mensagem</button>
-
-        <h2 class="informs">Informação de Conta</h2>
-        <iframe class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29277.2469047944!2d-46.6847650604492!3d-23.4728748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef76349e2652d%3A0xdbe44d5361baa99c!2sCl%C3%ADnica%20Fares%20-%20Vila%20Nova%20Cachoeirinha!5e0!3m2!1spt-BR!2sbr!4v1764207812321!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
     <section class="container" id="detalhe">
         <h2>Detalhes do Paciente</h2>
         <p>Revise e atualize informações do paciente</p>
@@ -275,40 +247,90 @@
                 <button class="salvar">Salvar</button>
             </a>
         </div>
-       <div class="cont-direita">
-           <div class="detalhe-pessoa">
-            <div class="img-perfil"></div>
-               <h4>Sofia Almeida</h4>
-            <p class="deta-pag">Paciente</p>
-            <p class="deta-pag">ID:12345</p>
-            <div class="consulta">
-                <h4>Proxima Consulta</h4>
-                <i class="fa-regular fa-calendar"></i>
-                <div class="cont-paciente">
-                    <h5>Consulta de Rotina</h5>
-                    <p>20 de Julho,2024-10:00</p>
-                </div>
-                <h4>Historico Médico</h4>
-                <i class="fa-regular fa-heart"></i>
-                <div class="cont-paciente">
+        <div class="cont-direita">
+            <div class="detalhe-pessoa">
+                <div class="img-perfil"></div>
+                <h4>Rafaela Guariza</h4>
+                <p class="deta-pag">Paciente</p>
+                <p class="deta-pag">ID:12345</p>
+                <div class="consulta">
+                    <h4>Proxima Consulta</h4>
+                    
+                    <div class="item-info">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div class="cont-paciente">
+                            <h5>Consulta de Rotina</h5>
+                            <p>20 de Julho, 2024 - 10:00</p>
+                        </div>
+                    </div>
+                    
+                    <h4>Historico Médico</h4>
+                    
+                    <div class="item-info">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="cont-paciente">
                     <h5>Condições de Rotina</h5>
                     <p>Hipertensão</p>
                 </div>
+            </div>
+            
+            <div class="item-info">
                 <i class="fa-solid fa-syringe"></i>
                 <div class="cont-paciente">
                     <h5>Alergias</h5>
                     <p>Nenhum</p>
                 </div>
+            </div>
+
+            <div class="item-info">
                 <i class="fa-solid fa-capsules"></i>
                 <div class="cont-paciente">
                     <h5>Medicações</h5>
                     <p>Nenhum</p>
                 </div>
             </div>
-            </div>
+        </div>
     </div>
-    </section>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container" id="contato">
+    <div class="contato-text">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para ajudar. Se você tiver alguma dúvida ou precisar de assistência, entre em contato
+            conosco através do formulário abaixo ou das informações de contato fornecidas.</p>
+    </div>
+    <div class="input-grid">
+        <div class="input-cont">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Seu nome/completo">
+        </div>
+        <div class="input-cont">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Seu e-mail completo">
+        </div>
+        <div class="input-cont">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" placeholder=" Seu telefone completo">
+        </div>
+        <div class="input-descri">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="msg" name="msg" rows="3" cols="40"></textarea>
+        </div>
+    </div>
+    <button class="for-button" type="submit">Enviar Mensagem</button>
 
+    <h2 class="informs">Informação de Conta</h2>
+    <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29277.2469047944!2d-46.6847650604492!3d-23.4728748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef76349e2652d%3A0xdbe44d5361baa99c!2sCl%C3%ADnica%20Fares%20-%20Vila%20Nova%20Cachoeirinha!5e0!3m2!1spt-BR!2sbr!4v1764207812321!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<footer class="footer">
+  <p>&copy; 2025 Consultoria Medica. Site Clinica DevMag.</p>
+</footer>
 </body>
 
 </html>
