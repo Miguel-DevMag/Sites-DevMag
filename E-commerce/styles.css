@@ -215,7 +215,7 @@ section h1{
     background-color: aliceblue;
 }
 
-#Contato{
+#contato{
     display: flex;
     gap: 5rem;
     justify-content: space-around;
@@ -253,4 +253,5 @@ section h1{
     text-align: center;
     background-color: #555;
     color: #fff;
+    padding: 10px;
 }
