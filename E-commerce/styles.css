@@ -67,7 +67,7 @@ header{
 }
 
 .Meio{
-    padding: 7rem 0 0 8.5rem;
+    padding: 15rem 0 0 8.5rem;
     line-height: 4rem;
 }
 
@@ -195,11 +195,13 @@ section h1{
 .roupa img{
     width: 250px;
     height: auto;
+    border-radius: 5px;
 }
 
 .roupa{
     background-color: #c8815f;
     color: #000;
+    border-radius: 10px;
 }
 
 .Marcas{
@@ -213,6 +215,7 @@ section h1{
     width: 180px;
     height: auto;
     background-color: aliceblue;
+    margin: 0 10px;
 }
 
 #contato{
@@ -235,7 +238,7 @@ section h1{
 .meio-contato h5{
     font-size: 15px;
     font-weight: 600;
-    color: #555;
+    color: #797878;
 }
 
 .meio-contato li{
@@ -244,7 +247,7 @@ section h1{
 
 .meio-contato li a{
     display: block;
-    color: #555;
+    color: #797878;
     font-weight: 600;
     transition: all .35s ease;
 }
